@@ -6,6 +6,7 @@ import { Routes, Route } from "react-router-dom";
 
 //Pages Routes
 const Home = lazy(() => import("../pages/home"));
+const About = lazy(() => import("../pages/about"));
 
 const Layout: FC = () => {
 
@@ -13,6 +14,7 @@ const Layout: FC = () => {
         <main >
             <Routes>
                 <Route path="/" element={<Home />} />
+                <Route path="/about" element={<About />} />
             </Routes>
         </main>
     )

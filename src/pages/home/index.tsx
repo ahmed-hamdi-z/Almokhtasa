@@ -1,20 +1,19 @@
 // Dependencies
-import { FC} from "react";
+import { FC, lazy} from "react";
 // React Router
 import { Outlet } from "react-router-dom";
 
 // Components
-// const EX = lazy(() => import("./ex"));
+ const HomeComponents = lazy(() => import("../../components/home"));
 
 // Pages
 const Home: FC = () => {
 
   return (
       <div className='w-full h-full'>
-       
           <div>
             {/* Add Components here */}
-                Home
+                <HomeComponents />
           </div>
 
           <div>
