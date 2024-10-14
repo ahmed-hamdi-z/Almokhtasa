@@ -1,7 +1,6 @@
 // Footer.tsx
 import React from 'react';
-import { FaInstagram, FaFacebookF } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
+
 const Footer: React.FC = () => {
     return (
         <footer className="bg-footer bg-cover w-[130%] ml-[-18%] ">
@@ -36,25 +35,27 @@ const Footer: React.FC = () => {
                                 Expedita sequi.<br />
                                 Harum repellendus ipsum dignissimos?
                             </p>
+                            <div className="flex justify-center md:justify-start space-x-2 mt-8 ">
+                                <a href="#" aria-label="Instagram">
+                                    <img src="/images/insta.svg" className='w-10 h-10' alt="#" />
+                                </a>
+                                <a href="#" aria-label="Facebook">
+                                    <img src="/images/face.svg" className='w-10 h-10' alt="#" />
+                                </a>
+                                <a href="#" aria-label="Twitter">
+                                    <img src="/images/x.svg" className='w-10 h-10' alt="#" />
+                                </a>
+                                <a href="#" aria-label="YouTube">
+                                    <img src="/images/youtube.svg" className='w-10 h-10' alt="#" />
+                                </a>
+                                <a href="#" aria-label="">
+                                    <img src="/images/tiktok.svg" className='w-10 h-10' alt="#" />
+                                </a>
+                            </div>
                         </div>
                     </div>
-                    <div className="flex justify-center md:justify-start space-x-4 mt-5 ">
-                    <a href="#" aria-label="Instagram">
-                        <i className=" text-black text-2xl"> <FaInstagram />  </i>
-                    </a>
-                    <a href="#" aria-label="Facebook">
-                        <i className=" text-black text-2xl"> <FaFacebookF /> </i>
-                    </a>
-                    <a href="#" aria-label="Twitter">
-                        <i className=" text-black text-2xl"> <FaXTwitter /> </i>
-                    </a>
-                    {/* <a href="#" aria-label="YouTube">
-                        <i className=" text-black text-2xl"></i>
-                    </a>
-                    <a href="#" aria-label="LinkedIn">
-                        <i className="fab fa-linkedin text-black text-2xl"></i>
-                    </a> */}
-                </div>
+
+
                     {/* Form Section */}
                     <div className="flex flex-col items-center md:items-start">
                         <h3 className="text-[#505050] text-lg font-semibold">Lorem ipsum</h3>
@@ -75,7 +76,7 @@ const Footer: React.FC = () => {
                 </div>
 
                 {/* Social Media Icons */}
-             
+
             </div>
         </footer>
     );

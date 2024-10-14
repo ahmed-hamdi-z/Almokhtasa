@@ -24,7 +24,7 @@ const Home: FC = () => {
       <div className="w-full h-[50%] mt-16">
         <AboutSection />
       </div>
-      <div className="w-full ">
+      <div className="w-[full] overflow-hidden">
         <ServicesSection />
       </div>
       <div className="w-full overflow-hidden">

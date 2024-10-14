@@ -15,7 +15,7 @@ const About: FC = () => {
 
   return (
     <div className='w-full h-full'>
-      <div>
+      <div className="overflow-hidden">
         <AboutHero />
       </div>
       <div>

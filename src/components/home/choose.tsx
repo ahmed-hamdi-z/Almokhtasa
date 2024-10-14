@@ -55,7 +55,7 @@ const ChooseUs: React.FC = () => {
 
     return (
         <div className="flex flex-col items-center justify-center w-[130%] md:h-[130vh] bg-choose bg-cover bg-center overflow-hidden ml-[-12%] ">
-            <h1 className="text-4xl text-[#505050] font-bold md:mt-[-90px] my-10 ">why choose us</h1>
+            <h1 className="text-4xl text-[#505050] font-bold md:mt-[-90px] my-16 md:mr-20">why choose us</h1>
             <div className="md:max-w-4xl max-w-[300px] grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-4 md:mt-24 mr-[5%] ">
                 {cardsData.map((card, index) => (
                     <Card
