@@ -2,7 +2,7 @@
 import { FC, lazy, Suspense } from "react";
 
 // Router
-import { BrowserRouter as Router } from "react-router-dom";
+import { HashRouter as Router } from "react-router-dom";
 
 // Main Style File
 import './index.css'

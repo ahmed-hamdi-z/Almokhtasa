@@ -4,7 +4,7 @@ import { FaInstagram, FaFacebookF } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 const Footer: React.FC = () => {
     return (
-        <footer className="bg-footer bg-cover">
+        <footer className="bg-footer bg-cover w-[130%] ml-[-18%] ">
             <div className="container flex flex-col items-center mx-auto py-10 px-4">
                 {/* Footer Wrapper */}
                 <div className="text-center md:text-left">
@@ -17,7 +17,7 @@ const Footer: React.FC = () => {
 
 
                     {/* Information Columns */}
-                    <div className="flex space-x-10">
+                    <div className="flex md:flex-row flex-col md:space-x-10 md:space-y-0 space-y-3">
                         {/* First Info Block */}
                         <div>
                             <h3 className="text-[#505050] text-lg font-semibold">Lorem ipsum</h3>

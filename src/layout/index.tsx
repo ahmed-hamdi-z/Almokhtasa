@@ -9,6 +9,7 @@ import Footer from "../components/footer";
 //Pages Routes
 const Home = lazy(() => import("../pages/home"));
 const About = lazy(() => import("../pages/about"));
+const Services = lazy(() => import("../pages/services"));
 
 const Layout: FC = () => {
 
@@ -20,8 +21,9 @@ const Layout: FC = () => {
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/about" element={<About />} />
+                <Route path="/services" element={<Services />} />
             </Routes>
-            <div>
+            <div className="overflow-hidden "> 
                 <Footer />
             </div>
         </main>

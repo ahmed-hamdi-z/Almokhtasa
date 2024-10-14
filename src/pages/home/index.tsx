@@ -5,12 +5,11 @@ import { Outlet } from "react-router-dom";
 
 // Components
 const AboutSection = lazy(() => import("../../components/home/about-section"));
-import Hero from "../../components/home/hero";
-import ServicesSection from "../../components/home/services-section";
-import ChooseUs from "../../components/home/choose";
-import BlogSection from "../../components/home/blog-section";
-import ScrollingTestimonials from "../../components/home/feedback";
-
+const Hero = lazy(() => import("../../components/home/hero"));
+const ServicesSection = lazy(() => import("../../components/home/services-section"));
+const ChooseUs = lazy(() => import("../../components/home/choose"));
+const BlogSection = lazy(() => import("../../components/home/blog-section"));
+const ScrollingTestimonials = lazy(() => import("../../components/home/feedback"));
 
 // Pages
 const Home: FC = () => {
