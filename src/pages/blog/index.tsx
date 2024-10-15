@@ -13,7 +13,7 @@ const Blog: FC = () => {
   return (
     <div className='w-full h-full'>
 
-      <div className="w-full h-full overflow-hidden">
+      <div className="w-full h-full overflow-hidden md:mb-0 mb-[-20vh]">
         <HeroSection  />
       </div>
       <div className="w-full h-full bg-[#F1F1F1]">
