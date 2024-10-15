@@ -17,6 +17,7 @@ export default {
         'choose': "url('/images/choose.svg')",
         'footer': "url('/images/footer.svg')",
         'about': "url('/images/about.svg')",
+        'blog-hero': "url('/images/blog-hero.svg')",
         'services-hero': "url('/images/services-hero.png')",
         'gradient-nav': 'linear-gradient(90deg, #31B8B1 0%, #5AD3CC 100%)',
       },

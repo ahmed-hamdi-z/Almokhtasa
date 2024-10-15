@@ -1,14 +1,15 @@
 
 import { Link } from "react-router-dom";
 
-const ServicesCards = () => {
+
+const BlogCards = () => {
 
     return (
-        <section className="bg-white w-full flex flex-col items-center justify-center my-24 p-2" >
-          
-            <div className=" ">
-                <div className=" w-full">
-                    <div className="grid md:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-8" >
+        <section className=" w-full flex flex-col items-center justify-center my-24 " >
+            <h1 className="text-4xl text-[#505050] font-bold mb-10 "></h1>
+            <div className=" overflow-hidden max-w-[70rem] ">
+                <div className="mx-auto max-w-full">
+                    <div className="grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3  " >
                         {posts.map((post) => {
                             return <Post key={post.id} {...post} />;
                         })}
@@ -25,14 +26,14 @@ const Post = ({ id, imgUrl, title, description }: PostType) => {
         <Link
             to={`/details/${id}`}
             key={id}
-            className="relative shrink-0 cursor-pointer transition-transform hover:-translate-y-1 rounded-3xl mx-auto">
+            className="relative shrink-0 cursor-pointer transition-transform hover:-translate-y-1 rounded-3xl">
             <img
                 src={imgUrl}
-                className="h-[200px] md:w-[20vw] w-[70vw] object-cover rounded-3xl"
+                className="h-[200px] w-full object-cover rounded-t-3xl"
                 alt={`An image for a fake blog post titled ${title}`}
             />
-            <div className="flex-col md:w-[250px] w-full rounded-b-3xl"> <p className=" text-lg text-black font-medium px-2">{title}</p>
-                <p className="text-sm mt-2 text-black max-h-30 line-clamp-5 px-2 pb-3">
+            <div className="flex-col bg-[#FB8302] rounded-b-3xl"> <p className="5 text-lg text-white font-medium px-2">{title}</p>
+                <p className="text-sm mt-2 text-white max-h-30 line-clamp-6 px-2 pb-3">
                     {description}
                 </p>
             </div>
@@ -41,7 +42,7 @@ const Post = ({ id, imgUrl, title, description }: PostType) => {
     );
 };
 
-export default ServicesCards;
+export default BlogCards;
 
 type PostType = {
     id: number;
@@ -66,49 +67,57 @@ const posts: PostType[] = [
     {
         id: 3,
         imgUrl: "/images/Surgical.png",
-        title: "The most popular interior ",
+        title: "The most popular interior decoration",
+        description: ["The most popular interior decoration styles disc"],
+    },
+    {
+        id: 4,
+        imgUrl: "/images/Surgical.png",
+        title: "The most popular interior decoration",
+        description: ["The most popular interior decoration styles disc"],
+    },
+    {
+        id: 5,
+        imgUrl: "/images/Surgical.png",
+        title: "The most popular interior decoration",
         description: ["The most popular interior decoration styles disc"],
     },
     {
         id: 3,
         imgUrl: "/images/Surgical.png",
-        title: "The most popular interior ",
+        title: "The most popular interior decoration",
         description: ["The most popular interior decoration styles disc"],
     },
     {
         id: 3,
         imgUrl: "/images/Surgical.png",
-        title: "The most popular interior ",
+        title: "The most popular interior decoration",
         description: ["The most popular interior decoration styles disc"],
     },
     {
         id: 3,
         imgUrl: "/images/Surgical.png",
-        title: "The most popular interior ",
+        title: "The most popular interior decoration",
         description: ["The most popular interior decoration styles disc"],
     },
     {
         id: 3,
         imgUrl: "/images/Surgical.png",
-        title: "The most popular interior ",
+        title: "The most popular interior decoration",
         description: ["The most popular interior decoration styles disc"],
     },
     {
         id: 3,
         imgUrl: "/images/Surgical.png",
-        title: "The most popular interior ",
+        title: "The most popular interior decoration",
         description: ["The most popular interior decoration styles disc"],
     },
     {
         id: 3,
         imgUrl: "/images/Surgical.png",
-        title: "The most popular interior ",
+        title: "The most popular interior decoration",
         description: ["The most popular interior decoration styles disc"],
     },
-    {
-        id: 3,
-        imgUrl: "/images/Surgical.png",
-        title: "The most popular interior ",
-        description: ["The most popular interior decoration styles disc"],
-    },
+
+
 ];
