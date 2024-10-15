@@ -66,7 +66,7 @@ const ChooseUs: React.FC = () => {
                     />
                 ))}
             </div>
-            <div className="md:max-w-4xl max-w-[300px] grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 mt-5 gap-4 md:ml-52">
+            <div className="md:max-w-4xl max-w-[300px] grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 mt-5 gap-4 md:ml-56 mr-8">
                 {cardsDataTow.map((card, index) => (
                     <Card
                         key={index}

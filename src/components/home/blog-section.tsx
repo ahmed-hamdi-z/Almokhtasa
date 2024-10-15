@@ -7,11 +7,11 @@ const MARGIN = 20;
 const BlogSection = () => {
 
     return (
-        <section className="bg-white w-full flex flex-col items-center justify-center my-24 ml-2" >
+        <section className="bg-white w-full flex flex-col items-center justify-center my-24 " >
             <h1 className="text-4xl text-[#505050] font-bold mb-10 ">Blog</h1>
             <div className=" overflow-hidden max-w-[70rem] ">
                 <div className="mx-auto max-w-full">
-                    <div className="flex flex-col gap-4 md:flex-row " >
+                    <div className="grid gap-3 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 " >
                         {posts.map((post) => {
                             return <Post key={post.id} {...post} />;
                         })}
