@@ -12,6 +12,7 @@ const Services = lazy(() => import("../pages/services"));
 import Blog from "../pages/blog";
 import MainNavbar from "../components/navbar";
 import Footer from "../components/footer";
+import Contact from "../pages/contact";
 
 
 const Layout: FC = () => {
@@ -26,6 +27,7 @@ const Layout: FC = () => {
                 <Route path="/about" element={<About />} />
                 <Route path="/services" element={<Services />} />
                 <Route path="/blog" element={<Blog />} />
+                <Route path="/contact" element={<Contact />} />
             </Routes>
             <div className="overflow-hidden "> 
                 <Footer />

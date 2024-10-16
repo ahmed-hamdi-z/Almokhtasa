@@ -15,10 +15,10 @@ const StuffSection = () => {
                     fugiat expedita distinctio? Voluptatem laborum officiis
                     reiciendis maxime tempora odio nihil veritatis? Autem!</p>
             </div>
-            
-            <div className=" overflow-hidden flex items-center justify-center md:mt-[-18vh] mt-[-10vh]  ">
+           
+            <div className=" overflow-hidden flex items-center justify-center md:mt-[-18vh] mt-[-10vh]">
                 <div className="mx-auto max-w-full">
-                    <div className="flex flex-col gap-4 md:flex-row " >
+                    <div className=" grid gap-3 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
                         {posts.map((post) => {
                             return <Post key={post.id} {...post} />;
                         })}

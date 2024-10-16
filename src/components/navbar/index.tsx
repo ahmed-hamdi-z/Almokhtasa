@@ -63,13 +63,13 @@ const Links = () => {
             <button onClick={() => handleScroll("top", "/")}>
                 {/* {t("Home")} */}Home
             </button>
-            <a href="/about" >
+            <Link to="/about" >
                 {/* {t("About")} */}Who We Are!
-            </a>
-            <button onClick={() => handleScroll("services", "/")}>
+            </Link>
+            <Link to='/services' >
                 {/* {t("Services")} */}Services
-            </button>
-            <Link to="/portfolio">
+            </Link>
+            <Link to="/contact">
                 {/* {t("Portfolio")} */}Get In Touch
             </Link>
 

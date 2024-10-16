@@ -1,14 +1,12 @@
-
 // Dependencies
 import { FC, lazy } from "react";
 // React Router
 import { Outlet } from "react-router-dom";
-import AboutText from "../../components/about/about-text";
-import StuffSection from "../../components/about/stuff";
 
 // Components
 const AboutHero = lazy(() => import("../../components/about/about-hero"));
-
+const AboutText = lazy(() => import("../../components/about/about-text"));
+const StuffSection = lazy(() => import("../../components/about/stuff"));
 
 // Pages
 const About: FC = () => {
