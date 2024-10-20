@@ -1,24 +1,36 @@
 // Dependencies
-import { FC, lazy } from "react";
+import { FC, lazy, useEffect } from "react";
 
 // Routes
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, useNavigate, useLocation } from "react-router-dom";
+// Languages
+import i18n from "i18next";
+import Cookies from "js-cookie";
+import '../components/languages';
 
 //Pages Routes
 const Home = lazy(() => import("../pages/home"));
 const About = lazy(() => import("../pages/about"));
+const Blog = lazy(() => import("../pages/blog"));
+const Contact = lazy(() => import("../pages/contact"));
 const Services = lazy(() => import("../pages/services"));
 
-import Blog from "../pages/blog";
-import MainNavbar from "../components/navbar";
-import Footer from "../components/footer";
-import Contact from "../pages/contact";
-
+// Components
+const MainNavbar = lazy(() => import("../components/navbar"));
+const Footer = lazy(() => import("../components/footer"));
 
 const Layout: FC = () => {
 
+    const lng = Cookies.get("i18next") || "ar";
+    const navigate = useNavigate();
+    const location = useLocation(); 
+
+    useEffect(() => {
+        window.document.dir = i18n.dir();
+      }, [lng, location, navigate]);
+    
     return (
-        <main >
+        <main>
             <div>
                 <MainNavbar />
             </div>

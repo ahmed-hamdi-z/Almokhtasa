@@ -1,14 +1,10 @@
 // Dependencies
 import React from 'react';
 
-
 const Form: React.FC = () => {
-
-
 
     return (
         <div className=" w-full h-full flex flex-col-reverse items-center md:mt-[-35vh] mt-0 absolute">
-
             <form className="bg-white shadow-md rounded-[30px] px-10 pt-6 pb-8 mb-4 md:w-[60%] w-[90%] ">
                 <h2 className="text-4xl md:text-7xl font-bold text-[#757575] text-center mt-10 mb-2">Contact Us</h2>
                 <p className="text-md md:text-lg text-center mb-10 text-[#757575]"> Get in touch with our team to learn more about us</p>
@@ -93,16 +89,14 @@ const Form: React.FC = () => {
 
                 {/* Submit Button */}
                 <div className="mt-6 flex justify-center">
-                    <button
-                        type="submit"
-                        className="bg-teal-500 text-white px-10 py-2 rounded-full hover:bg-teal-600 transition duration-300"
-                    >
+                    <button type="submit"
+                        className="bg-teal-500 text-white px-10 py-2 rounded-full hover:bg-teal-600 transition duration-300">
                         Submit
                     </button>
                 </div>
             </form>
             <div className='z-10 mb-[-11vh]'>
-                <img src="/images/contact-img.png" alt="#" className='md:w-[600px] w-[400px]' />
+                <img src="/images/contact-img.png" alt="#" className='md:w-[600px] w-[330px]' />
             </div>
         </div>
 
