@@ -16,7 +16,7 @@ const About: FC = () => {
             <div className="overflow-hidden">
                 <HeroSection />
             </div>
-            <div className="w-full overflow-hidden absolute md:-bottom-96 -bottom-[30rem] mt-[-50vh]  " >
+            <div className="w-full overflow-hidden absolute md:-bottom-96 -bottom-[22rem] mt-[-30vh]  " >
                 <Form />
             </div>
             <div>

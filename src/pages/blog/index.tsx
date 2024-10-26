@@ -16,7 +16,7 @@ const Blog: FC = () => {
       <div className="w-full h-full overflow-hidden md:mb-0 mb-[-23vh]">
         <HeroSection  />
       </div>
-      <div className="w-full h-full bg-[#F1F1F1]">
+      <div className="w-full h-full bg-[#F1F1F1] py-24">
         <BlogCards  />
       </div>
 

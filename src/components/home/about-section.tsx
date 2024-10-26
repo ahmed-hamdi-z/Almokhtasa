@@ -18,12 +18,12 @@ const AboutSection: FC = () => {
             </div>
             
             {/* Right Content Section */}
-            <div className="text-center md:text-left md:max-w-xl px-5 rtl:text-right">
+            <div className="text-center md:text-left md:max-w-xl px-5 rtl:text-right mb-8">
                 <h2 className="text-2xl font-bold text-[#505050] mb-2"> {t("About Us")}</h2>
                 <p className="text-[#505050] mb-6 text-xl font-thin">
                 {t("About Us Disc")}
                 </p>
-                <Link to="/about" className="bg-[#57C8BF] text-white px-7 py-1.5 rounded-full shadow-md hover:bg-teal-500 transition duration-300 font-semibold">
+                <Link to="/about" className="bg-[#57C8BF] text-white px-7 py-1.5 rounded-full shadow-md hover:bg-teal-500 transition duration-300 font-semibold ">
                       {t("See More")}
                 </Link>
             </div>

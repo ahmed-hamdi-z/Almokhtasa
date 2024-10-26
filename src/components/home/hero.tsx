@@ -15,7 +15,7 @@ const Hero: React.FC<VideoPlayerProps> = ({ videoUrl }) => {
                 title="Video Player"
                 allowFullScreen
             />
-            <div className="absolute bottom-0 z-10">
+            <div className="absolute left-32 bottom-0 z-10">
                  <ScrollButton />
             </div>
            

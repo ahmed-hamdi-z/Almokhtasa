@@ -1,6 +1,4 @@
 
-import { Link } from "react-router-dom";
-
 import { useTranslation } from "react-i18next";
 
 const StuffSection = () => {
@@ -27,10 +25,9 @@ const StuffSection = () => {
 const Post = ({ id, imgUrl, title, description }: PostType) => {
     const { t } = useTranslation();
     return (
-        <Link
-            to={`/details/${id}`}
+        <div 
             key={id}
-            className="relative shrink-0 cursor-pointer transition-transform hover:-translate-y-1 rounded-3xl">
+            className="relative shrink-0 transition-transform hover:-translate-y-1 rounded-3xl">
 
             <img
                 src={imgUrl}
@@ -43,7 +40,7 @@ const Post = ({ id, imgUrl, title, description }: PostType) => {
                 </p>
             </div>
 
-        </Link>
+        </div>
     );
 };
 

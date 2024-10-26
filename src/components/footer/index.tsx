@@ -8,7 +8,7 @@ const Footer: React.FC = () => {
 
     return (
         <footer className="bg-footer bg-cover w-[130%] rtl:mr-[-12%] ml-[-18%]">
-            <div className="container flex flex-col items-center mx-auto py-10 px-4">
+            <div className="container flex flex-col items-center py-10 ">
                 {/* Footer Wrapper */}
                 <div className="text-center md:text-left">
                     <img src="/images/logo.svg" alt="Logo" className="mx-auto md:mx-0 mb-4" />
@@ -17,7 +17,7 @@ const Footer: React.FC = () => {
                     {/* Information Columns */}
                     <div className="flex md:flex-row flex-col rtl:md:gap-32 space-x-32 md:space-y-0 space-y-5">
                         {/* First Info Block */}
-                        <div className='mt-4 flex flex-col items-center rtl:items-start'>
+                        <div className='mt-4 flex flex-col items-center rtl:items-start '>
                             <span className="block capitalize text-footer-text text-lg font-semibold">
                                 {t("Information")}
                             </span>
@@ -77,7 +77,7 @@ const Footer: React.FC = () => {
                                     </li>
                                 </ul>
                             </div>
-                            <div className="flex justify-center md:justify-start space-x-2 mt-8 ">
+                            <div className="flex justify-center md:justify-start space-x-2 mt-8 mr-10">
                                 <a href="https://www.instagram.com/mokhtassa.pet" aria-label="Instagram">
                                     <img src="/images/insta.svg" className='w-10 h-10' alt="#" />
                                 </a>
