@@ -5,7 +5,7 @@ const HeroSection = () => {
 
     return (
         <div className="w-full h-[110vh] ">
-            <div className="bg-blog-hero bg-cover bg-center w-[120%] h-full md:mt-[-28vh] mt-[-15vh] ">
+            <div className="bg-blog-hero bg-cover bg-center w-[120%] h-full md:mt-[-28vh] mt-[-15vh] rtl:-mr-2 ">
 
                 <div className="flex md:flex-row flex-col-reverse items-center justify-center w-full h-full ">
                     <div className="flex w-full items-center md:justify-center md:mt-72 mt-[-20px] ml-[-10vw]">
@@ -13,7 +13,7 @@ const HeroSection = () => {
                     </div>
 
                     <div className="flex w-full md:items-center md:justify-start justify-center md:mt-64" >
-                        <h1 className=" text-[#fff] md:text-[200px] text-8xl rtl:text-8xl font-bold md:ml-[-3vw] ml-[-10vw] z-10 "> {t("Blog")}</h1>
+                        <h1 className=" text-[#fff] md:text-[200px] text-8xl rtl:text-8xl font-bold md:ml-[-3vw]  z-10 "> {t("Blog")}</h1>
                     </div>
                 </div>
 

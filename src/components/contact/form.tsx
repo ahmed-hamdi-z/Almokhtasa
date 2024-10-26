@@ -143,7 +143,7 @@ const Form: React.FC = () => {
               </div>
 
             )}
-            <div className='z-10 md:mb-[-11vh] mb-[-6vh]'>
+            <div className='z-10 md:mb-[-11vh] mb-[-5vh]'>
                 <img src="/images/contact-img.png" alt="#" className='md:w-[600px] w-[330px]' />
             </div>
         </div>
