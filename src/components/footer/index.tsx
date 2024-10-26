@@ -40,7 +40,7 @@ const Footer: React.FC = () => {
 
                         {/* Second Info Block */}
                         <div>
-                            <div className='mt-4 flex flex-col items-center  '>
+                            <div className='mt-4 flex flex-col items-center  mr-36'>
                                 <span className="block capitalize text-footer-text text-lg font-semibold">
                                     {t("Contact")}
                                 </span>
@@ -77,7 +77,7 @@ const Footer: React.FC = () => {
                                     </li>
                                 </ul>
                             </div>
-                            <div className="flex justify-center md:justify-start space-x-2 mt-8 mr-10">
+                            <div className="flex justify-center md:justify-start space-x-2 mt-8 mr-32">
                                 <a href="https://www.instagram.com/mokhtassa.pet" aria-label="Instagram">
                                     <img src="/images/insta.svg" className='w-10 h-10' alt="#" />
                                 </a>
@@ -113,7 +113,7 @@ const Footer: React.FC = () => {
                             placeholder={t("Notes")}
                             className="mt-2 px-4 py-2 rounded-md w-full md:w-48 outline-none"
                         />
-                        <button className="mt-4 px-6 py-2 bg-[#FB8302] text-footer-text rounded-md ">
+                        <button className="mt-4 px-6 py-2 bg-[#FB8302] text-white rounded-md ">
                             {t("Submit")}
                         </button>
                     </div>
