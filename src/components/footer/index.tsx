@@ -17,7 +17,7 @@ const Footer: React.FC = () => {
                     {/* Information Columns */}
                     <div className="flex md:flex-row flex-col rtl:md:gap-32 space-x-32 md:space-y-0 space-y-5">
                         {/* First Info Block */}
-                        <div className='mt-4 flex flex-col items-center rtl:items-start '>
+                        <div className='mt-4 flex flex-col items-center  '>
                             <span className="block capitalize text-footer-text text-lg font-semibold">
                                 {t("Information")}
                             </span>
@@ -40,7 +40,7 @@ const Footer: React.FC = () => {
 
                         {/* Second Info Block */}
                         <div>
-                            <div className='mt-4 flex flex-col md:items-center  '>
+                            <div className='mt-4 flex flex-col items-center  '>
                                 <span className="block capitalize text-footer-text text-lg font-semibold">
                                     {t("Contact")}
                                 </span>
