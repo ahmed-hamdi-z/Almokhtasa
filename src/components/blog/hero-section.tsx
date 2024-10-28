@@ -13,7 +13,7 @@ const HeroSection = () => {
                     </div>
 
                     <div className="flex w-full md:items-center md:justify-start justify-center md:mt-64" >
-                        <h1 className=" text-[#fff] md:text-[200px] text-8xl rtl:text-8xl font-bold md:ml-[-3vw]  z-10 "> {t("Blog")}</h1>
+                        <h1 className=" text-[#757575] md:text-[200px] text-8xl rtl:text-8xl font-bold md:ml-[-3vw]  z-10 "> {t("Blog")}</h1>
                     </div>
                 </div>
 

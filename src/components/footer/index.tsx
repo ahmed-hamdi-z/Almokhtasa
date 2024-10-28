@@ -7,15 +7,15 @@ const Footer: React.FC = () => {
     const { t } = useTranslation();
 
     return (
-        <footer className="bg-footer bg-cover w-[130%] rtl:mr-[-12%] ml-[-18%]">
-            <div className="container flex flex-col items-center py-10 ">
+        <footer className="bg-footer bg-cover w-[130%] rtl:mr-[-12%] md:ml-[-18%]">
+            <div className=" flex flex-col md:ltr:items-center ltr:items-start items-center ltr:mx-12 py-10 ">
                 {/* Footer Wrapper */}
                 <div className="text-center md:text-left">
                     <img src="/images/logo.svg" alt="Logo" className="mx-auto md:mx-0 mb-4" />
                 </div>
-                <div className="flex flex-col md:flex-row-reverse items-center gap-x-44">
+                <div className="flex flex-col md:flex-row items-center md:gap-x-20">
                     {/* Information Columns */}
-                    <div className="flex md:flex-row flex-col rtl:md:gap-32 space-x-32 md:space-y-0 space-y-5">
+                    <div className="flex flex-row rtl:md:gap-32 md:space-x-32 ">
                         {/* First Info Block */}
                         <div className='mt-4 flex flex-col items-center  '>
                             <span className="block capitalize text-footer-text text-lg font-semibold">
@@ -38,47 +38,43 @@ const Footer: React.FC = () => {
                             </ul>
                         </div>
 
-                        {/* Second Info Block */}
-                        <div>
-                            <div className='mt-4 flex flex-col items-center  mr-36'>
-                                <span className="block capitalize text-footer-text text-lg font-semibold">
-                                    {t("Contact")}
-                                </span>
-                                <ul className="list-unstyled">
-                                    <li className="text-footer-text">
+                        <div className='mt-4 flex flex-col items-center justify-center'>
+                            <span className="block capitalize text-footer-text text-lg font-semibold">
+                                {t("Contact")}
+                            </span>
+                            <ul className="list-unstyled">
+                                <li className="text-footer-text">
 
-                                        <a
-                                            className="text-footer-text hover:text-white text-sm flex my-3 ml-3"
-                                            href="tel:0509130845" >
+                                    <a
+                                        className="text-footer-text hover:text-white text-sm flex my-3 ml-3"
+                                        href="tel:0509130845" >
 
-                                            <img src='/images/phone.svg' className="w-6 h-6 text-footer-text cursor-text" />{" "}
-                                            <span className=" mx-2 text-base">0500505154</span>
-                                        </a>
-                                    </li>
-                                    <li className="text-footer-text">
+                                        <img src='/images/phone.svg' className="w-6 h-6 text-footer-text cursor-text" />{" "}
+                                        <span className=" mx-2 text-base">0500505154</span>
+                                    </a>
+                                </li>
+                                <li className="text-footer-text">
 
-                                        <a
-                                            className="text-footer-text hover:text-white text-sm flex my-3 ml-3"
-                                            href="mailto:info@dream.sa.com">
+                                    <a
+                                        className="text-footer-text hover:text-white text-sm flex my-3 ml-3"
+                                        href="mailto:info@dream.sa.com">
 
-                                            <img src='/images/email.svg' className="w-6 h-6 text-footer-text cursor-text " />{" "}
-                                            <span className=" mx-10 text-base absolute">info@Almokhtasa.sa.com</span>
-                                        </a>
-                                    </li>
-                                    <li className="text-footer-text">
+                                        <img src='/images/email.svg' className="w-6 h-6 text-footer-text cursor-text " />
+                                        <span className=" mx-10 text-base absolute">Almokhtasa.sa</span>
+                                    </a>
+                                </li>
+                                <li className="text-footer-text">
+                                    <a
+                                        className="text-footer-text hover:text-white cursor-pointer text-sm flex my-3 ml-3"
+                                        href="https://maps.app.goo.gl/hLpfraJfAr8m7hp5A?g_st=com.google.maps.preview.copy">
 
-                                        <a
-                                            className="text-footer-text hover:text-white cursor-pointer text-sm flex my-3 ml-3"
-                                            href="https://maps.app.goo.gl/hLpfraJfAr8m7hp5A?g_st=com.google.maps.preview.copy"
-                                        >
-                                            <img src='/images/location.svg' className="w-6 h-6 text-footer-text cursor-pointer" />{" "}
-                                            <span className=" mx-10 text-base absolute"> {t("Riyadh-Al Nargis district")}</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div className="flex justify-center md:justify-start space-x-2 mt-8 mr-32">
-                                <a href="https://www.instagram.com/mokhtassa.pet" aria-label="Instagram">
+                                        <img src='/images/location.svg' className="w-6 h-6 text-footer-text cursor-pointer" />
+                                        <span className=" mx-10 text-base absolute"> {t("Riyadh-Al Nargis district")}</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div className="flex items-center justify-center w-full space-x-2 md:mt-8 mt-16 rtl:-mr-16 ltr:-ml-14">
+                                <a href="https://www.instagram.com/mokhtassa.pet" className='rtl:ml-2' aria-label="Instagram">
                                     <img src="/images/insta.svg" className='w-10 h-10' alt="#" />
                                 </a>
                                 <a href="https://www.facebook.com/profile.php?id=61566832435162" aria-label="Facebook">

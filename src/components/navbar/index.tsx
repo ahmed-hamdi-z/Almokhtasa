@@ -17,7 +17,6 @@ const MainNavbar: FC = () => {
     return (
         <>
             <FlyoutNav />
-
         </>
     );
 };
@@ -27,7 +26,7 @@ const FlyoutNav = () => {
     return (
         <nav className="fixed flex items-center w-full text-[#ffffff] bg-gradient-nav md:px-32 px-4 z-50 shadow-md shadow-[#31B8B1] opacity-95">
             <div className="flex items-center  py-1 w-full ">
-                <a href="/"><img src="/images/logo.svg" className="w-20 h-20" /></a>
+                <a href="/"><img src="/images/nav-logo.png" className="w-20 h-20" /></a>
                 <div className="hidden w-full md:flex md:justify-center  ">
                     <Links />
                 </div>
@@ -79,6 +78,7 @@ const Links = () => {
             <div className="p-1">
                 <LanguagesBtn />
             </div>
+
         </div>
     );
 };

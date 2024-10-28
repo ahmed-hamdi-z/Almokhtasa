@@ -12,6 +12,7 @@ import { CONFIG } from "@/utils/config";
 import Footer from "@/components/footer";
 import MainNavbar from "@/components/navbar";
 
+// Redux
 import { useSelector } from "react-redux";
 import { RootState } from "@/redux/store";
 
