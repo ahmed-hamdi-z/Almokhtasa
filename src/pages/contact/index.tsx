@@ -12,7 +12,7 @@ const HeroSection = lazy(() => import("@/components/contact/hero"));
 const About: FC = () => {
 
     return (
-        <div className='w-full h-full md:mb-96 mb-[120vh]'>
+        <div className='w-full h-full md:mb-96 mb-[100vh]'>
             <div className="overflow-hidden">
                 <HeroSection />
             </div>
