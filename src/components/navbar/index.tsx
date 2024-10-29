@@ -16,7 +16,7 @@ import LanguagesBtn from "../languages/button";
 const MainNavbar: FC = () => {
     return (
         <>
-            <FlyoutNav />
+            <FlyoutNav /> 
         </>
     );
 };

@@ -5,7 +5,7 @@ const HeroSection = () => {
 
     return (
         <div className="w-full h-[110vh] ">
-            <div className="bg-blog-hero bg-cover bg-center w-[120%] h-full md:mt-[-28vh] mt-[-15vh] rtl:-mr-2 ">
+            <div className="bg-blog-hero bg-cover bg-center w-[120%] h-full md:mt-[-28vh] mt-[-22vh] rtl:-mr-2 ">
 
                 <div className="flex md:flex-row flex-col-reverse items-center justify-center w-full h-full ">
                     <div className="flex w-full items-center md:justify-center md:mt-72 mt-[-20px] ml-[-10vw]">
