@@ -1,6 +1,7 @@
 
 import { Link } from "react-router-dom";
 import { posts, PostType } from "../../data";
+import { useTranslation } from "react-i18next";
 
 
 const BlogCards = () => {
@@ -22,6 +23,7 @@ const BlogCards = () => {
 };
 
 const Post = ({ id, imgUrl, title, description }: PostType) => {
+    const { t } = useTranslation();
 
     return (
         <Link
@@ -33,9 +35,9 @@ const Post = ({ id, imgUrl, title, description }: PostType) => {
                 className="h-[200px] w-full object-cover rounded-2xl"
                 alt={`An image for a fake blog post titled ${title}`}
             />
-            <div className="flex-col text-[#8B8B8B] text-center my-3"> <p className="text-lg font-medium px-2">{title}</p>
+            <div className="flex-col text-[#8B8B8B] text-center my-3"> <p className="text-lg font-medium px-2">{t(title)}</p>
                 <p className="text-sm mt-2 max-h-20 line-clamp-6 px-2 pb-3">
-                    {description}
+                    {t(description)}
                 </p>
             </div>
         </Link>

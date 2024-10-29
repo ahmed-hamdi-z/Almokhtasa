@@ -27,11 +27,11 @@ const Details: React.FC = () => {
                     alt=""
                     className="mt-10 px-3"
                 />
-                <p className="text-3xl md:mx-10 font-semibold my-10">
-                    {post.subtitle}
+                <p className="text-3xl md:mx-10 font-semibold m-3 ">
+                    {t(post.subtitle)}
                 </p>
-                <div className=" text-right md:mx-10 text-xl md:px-20 px-5">
-                    <p className="text-center my-5">{post.title1}</p>
+                <div className=" rtl:text-right md:mx-10 text-xl md:px-20 ">
+                    <p className="text-center m-3">{t(post.title1)}</p>
                     {post.description.map((description, index) => (
                         <ul className="leading-10 text-xl mx-5 p-2 list-disc">
                             <li  className="" key={index} >
@@ -39,8 +39,8 @@ const Details: React.FC = () => {
                             </li>
                         </ul>
                     ))}
-                    <p className="text-xl md:mx-10 p-2 text-center py-10">
-                        {post.subtitle2}
+                    <p className="text-xl md:mx-10 p-2 text-center mb-10">
+                        {t(post.subtitle2)}
                     </p>
                 </div>
 
