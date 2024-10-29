@@ -18,8 +18,8 @@ const Details: React.FC = () => {
 
     return (
         <div className="flex flex-col  w-full h-full pt-28 ">
-            <div className="flex flex-col items-center justify-center ">
-                <h1 className="text-3xl font-semibold px-2">
+            <div className="flex flex-col items-center justify-center text-center ">
+                <h1 className="text-3xl font-semibold px-3">
                     {t(post.title)}
                 </h1>
                 <img
@@ -33,7 +33,7 @@ const Details: React.FC = () => {
                 <div className=" rtl:text-right md:mx-10 text-xl md:px-20 ">
                     <p className="text-center m-3">{t(post.title1)}</p>
                     {post.description.map((description, index) => (
-                        <ul className="leading-10 text-xl mx-5 p-2 list-disc">
+                        <ul className="leading-10 text-xl mx-3 p-2 list-disc">
                             <li  className="" key={index} >
                                 {t(description)}
                             </li>
