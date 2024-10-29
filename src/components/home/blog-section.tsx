@@ -33,7 +33,7 @@ const Post = ({ id, imgUrl, title, description }: PostType) => {
             className="relative shrink-0 cursor-pointer transition-transform hover:-translate-y-1 rounded-3xl">
             <img
                 src={imgUrl}
-                className="h-[200px] w-full object-cover rounded-t-3xl"
+                className="h-[230px] w-full object-cover rounded-t-3xl"
                 alt={`An image for a fake blog post titled ${title}`}
             />
             <div className="flex-col max-h-24 bg-[#FB8302] rounded-b-3xl p-3 rtl:text-right"> <p className="5 text-lg text-white font-medium ">{t(title)}</p>
