@@ -60,7 +60,7 @@ const Footer: React.FC = () => {
                                         href="mailto:info@dream.sa.com">
 
                                         <img src='/images/email.svg' className="w-6 h-6 text-footer-text cursor-text " />
-                                        <span className=" mx-10 text-base absolute">info@almokhtasa.sa</span>
+                                        <span className=" mx-10 text-base absolute">info@almokhtassa.sa</span>
                                     </a>
                                 </li>
                                 <li className="text-footer-text">

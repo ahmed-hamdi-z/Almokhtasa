@@ -21,7 +21,6 @@ const ChooseUs = lazy(() => import("@/components/home/choose"));
 const BlogSection = lazy(() => import("@/components//home/blog-section"));
 const TopButton = lazy(() => import("@/components/top-btn"));
 const ScrollingTestimonials = lazy(() => import("@/components/home/feedback"));
-const WhatsAppIcon = lazy(() => import("@/components/whatsapp-icon"));
 
 
 // Pages
@@ -69,7 +68,6 @@ const LayoutStructure: FC = () => {
           </Col>
         </Row>
       </main>
-      <WhatsAppIcon />
       <TopButton />
     </>
   );

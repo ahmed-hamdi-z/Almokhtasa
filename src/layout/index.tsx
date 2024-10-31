@@ -26,6 +26,7 @@ const Details = lazy(() => import("@/pages/blog-details"));
 const NotFound = lazy(() => import("@/pages/not-found"));
 const About = lazy(() => import("@/pages/about"));
 const Blog = lazy(() => import("@/pages/blog"));
+const WhatsAppIcon = lazy(() => import("@/components/whatsapp-icon"));
 
 
 const Layout: FC = () => {
@@ -55,6 +56,7 @@ const Layout: FC = () => {
         <Route path="*" Component={NotFound} />
       </Routes>
       <div className="overflow-hidden">
+        <WhatsAppIcon />
         <Footer />
       </div>
     </main>
