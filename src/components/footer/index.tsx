@@ -15,7 +15,7 @@ const Footer: React.FC = () => {
                 </div>
                 <div className="flex flex-col md:flex-row items-center md:gap-x-20">
                     {/* Information Columns */}
-                    <div className="flex flex-row rtl:md:gap-32 md:space-x-32 "> 
+                    <div className="flex flex-row rtl:md:gap-32 md:space-x-32 ">
                         {/* First Info Block */}
                         <div className='mt-4 flex flex-col items-center  '>
                             <span className="block capitalize text-footer-text text-lg font-semibold">
@@ -60,7 +60,7 @@ const Footer: React.FC = () => {
                                         href="mailto:info@dream.sa.com">
 
                                         <img src='/images/email.svg' className="w-6 h-6 text-footer-text cursor-text " />
-                                        <span className=" mx-10 text-base absolute">Almokhtasa.sa</span>
+                                        <span className=" mx-10 text-base absolute">info@almokhtasa.sa</span>
                                     </a>
                                 </li>
                                 <li className="text-footer-text">

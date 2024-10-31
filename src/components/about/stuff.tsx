@@ -79,12 +79,7 @@ const posts: PostType[] = [
         title: "Mohamed Abd Eljabar",
         description: ["Veterinary Assistant"],
     },
-    // {
-    //     id: 5,
-    //     imgUrl: "/images/.jpg",
-    //     title: "Qutaiba Al Khair",
-    //     description: ["Veterinary Assistant"],
-    // },
+
     {
         id: 7,
         imgUrl: "/images/Mark.jpg",
@@ -104,5 +99,10 @@ const posts: PostType[] = [
         title: "Dr/Perfecto Altares",
         description: ["Veterinary"],
     },
-
+    {
+        id: 5,
+        imgUrl: "/images/Qutaiba.jpg",
+        title: "Qutaiba Al Khair",
+        description: ["Veterinary Assistant"],
+    },
 ];

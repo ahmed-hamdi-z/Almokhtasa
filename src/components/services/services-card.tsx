@@ -95,7 +95,7 @@ const posts: PostType[] = [
     },
     {
         id: 8,
-        imgUrl: "/images/Surgical.png",
+        imgUrl: "/images/Laboratory.png",
         title: "Laboratory",
         description: "Laboratory disc",
     },
