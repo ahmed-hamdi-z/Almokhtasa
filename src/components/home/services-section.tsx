@@ -16,7 +16,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ title, image }) => {
     return (
         <div className="  transform hover:scale-105 transition-transform duration-300  ">
             <div className="">
-                <img src={image} alt='' className="md:w-[38vw] w-[90%] h-auto object-cover mx-auto " />
+                <img src={image} alt='' className="md:w-[38vw] w-[90%] h-auto object-cover mx-auto rounded-[90px]" />
             </div>
             
             <div className="absolute top-7 mx-auto w-full">
@@ -32,7 +32,7 @@ const ServicesSection: React.FC = () => {
     const services = [
         {
             title: "Mobile Veterinary Services",
-            image: "/images/Veterinary.png", // replace with actual image path
+            image: "/images/Mobile.png", 
         },
         {
             title: "Emergency Services",
