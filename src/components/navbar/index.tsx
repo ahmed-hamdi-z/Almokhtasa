@@ -16,7 +16,7 @@ import LanguagesBtn from "../languages/button";
 const MainNavbar: FC = () => {
     return (
         <>
-            <FlyoutNav /> 
+            <FlyoutNav />
         </>
     );
 };
@@ -57,29 +57,34 @@ const Links = () => {
         }
     };
     return (
-        <div className="flex items-center gap-24 text-xl font-monotype ">
+        <>
 
-            <button onClick={() => handleScroll("top", "/")}>
-                {t("Home")}
-            </button>
-            <Link to="/about" >
-                {t("Who We Are!")}
-            </Link>
-            <Link to='/services' >
-                {t("Services")}
-            </Link>
-            <Link to='/blog' >
-                {t("Blog")}
-            </Link>
-            <Link to="/contact">
-                {t("Get In Touch")}
-            </Link>
+            <div className="flex items-center gap-10 text-xl font-monotype ">
 
-            <div className="p-1">
+                <button onClick={() => handleScroll("top", "/")}>
+                    {t("Home")}
+                </button>
+                <Link to="/about" >
+                    {t("Who We Are!")}
+                </Link>
+                <Link to='/services' >
+                    {t("Services")}
+                </Link>
+                <Link to='/blog' >
+                    {t("Blog")}
+                </Link>
+                <Link
+                    to='/gallery' >
+                    {t("Gallery")}
+                </Link>
+                <Link to="/contact">
+                    {t("Get In Touch")}
+                </Link>
+            </div>
+            <div className="ml-20">
                 <LanguagesBtn />
             </div>
-
-        </div>
+        </>
     );
 };
 
@@ -156,6 +161,10 @@ const MobileMenu = () => {
                                     <Link className="relative px-4 py-2 border-b-2  rounded-md border-[#835782]  text-[#fff] transition-transform transform hover:scale-105 hover:shadow-lg focus:outline-none focus:ring-4 focus:ring-blue-300"
                                         to='/blog' >
                                         {t("Blog")}
+                                    </Link>
+                                    <Link className="relative px-4 py-2 border-b-2  rounded-md border-[#835782]  text-[#fff] transition-transform transform hover:scale-105 hover:shadow-lg focus:outline-none focus:ring-4 focus:ring-blue-300"
+                                        to='/gallery' >
+                                        {t("Gallery")}
                                     </Link>
                                     <Link className="relative px-4 py-2 border-b-2  rounded-md border-[#835782]  text-[#fff] transition-transform transform hover:scale-105 hover:shadow-lg focus:outline-none focus:ring-4 focus:ring-blue-300"
                                         to="/contact">

@@ -23,11 +23,11 @@ const Post = ({ id, imgUrl, title, description }: PostType) => {
         <div key={id}
             className="flex flex-col items-center  shrink-0 transition-transform hover:-translate-y-1 rounded-3xl ">
             <div className="flex flex-col w-full items-center ">
-                <p className="absolute text-lg text-footer-text font-medium px-2 mt-1 text-center ">{t(title)}</p>
+                <p className="absolute text-lg text-footer-text font-medium px-2 md:mt-1 mt-3 text-center ">{t(title)}</p>
 
                 <img
                     src={imgUrl}
-                    className="h-[250px] md:w-[20vw] w-[70vw] object-cover rounded-3xl"
+                    className="md:h-[250px] md:w-[20vw] w-[70vw] object-cover rounded-3xl"
                     alt={`An image for a fake blog post titled ${title}`}
                 />
             </div>
