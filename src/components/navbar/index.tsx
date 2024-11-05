@@ -81,7 +81,7 @@ const Links = () => {
                     {t("Get In Touch")}
                 </Link>
             </div>
-            <div className="ml-20">
+            <div className="mx-20 ">
                 <LanguagesBtn />
             </div>
         </>

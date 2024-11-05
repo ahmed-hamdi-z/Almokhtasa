@@ -95,24 +95,6 @@ const GalleryImg: FC = () => {
     [images, viewImage]
   );
 
-  const thumbnailItems = useMemo(
-    () =>
-      images.map((image, i) => (
-        <img
-          key={`thumb-${i}`}
-          src={image}
-          className={`w-20 h-20 cursor-pointer m-1 rounded-md transition-transform duration-300 ease-in-out transform  ${
-            i === data.i ? "border-2 border-white" : "hover:scale-105"
-          }`}
-          alt={`Thumbnail ${i}`}
-          onClick={() => viewImage(image, i)}
-          loading="lazy"
-          onError={(e) => (e.currentTarget.src = "/images/placeholder.webp")}
-        />
-      )),
-    [images, data.i, viewImage]
-  );
-
   const toggleFullscreen = () => {
     const element = document.documentElement;
   
@@ -168,7 +150,7 @@ const GalleryImg: FC = () => {
           </button>
           <img
             src={data.img}
-            className="w-auto max-w-[90%] max-h-[70%]"
+            className="w-auto max-w-[100%] max-h-[70%]"
             alt="Enlarged view"
             style={{ transform: `scale(${zoomLevel})` }}
           />
@@ -179,9 +161,7 @@ const GalleryImg: FC = () => {
           >
             <FaArrowRight />
           </button>
-          <div className="mt-5 flex overflow-x-hidden w-full justify-center">
-            {thumbnailItems}
-          </div>
+      
           <button
             onClick={() => setIsPlaying(!isPlaying)}
             className="text-white text-2xl mt-5 absolute top-0 right-20"
