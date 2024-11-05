@@ -27,7 +27,7 @@ const Post = ({ id, imgUrl, title, description }: PostType) => {
 
                 <img
                     src={imgUrl}
-                    className="md:h-[250px] md:w-[20vw] w-[70vw] object-cover rounded-3xl"
+                    className="md:h-[250px] md:w-[20vw] w-[80vw] object-cover rounded-3xl"
                     alt={`An image for a fake blog post titled ${title}`}
                 />
             </div>
