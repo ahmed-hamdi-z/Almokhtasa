@@ -7,5 +7,6 @@ export const CONFIG = {
   services_path: "/services",
   blog_details_path: "/details/:id",
   contact_path: "/contact",
-  blog_path: "/blog"
+  blog_path: "/blog",
+  gallery_path: "/gallery"
 } as const;

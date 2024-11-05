@@ -17,6 +17,7 @@ import { useSelector } from "react-redux";
 import { RootState } from "@/redux/store";
 
 import '@/components/languages/index'
+import Gallery from "@/pages/gallery";
 
 //Pages Routes
 const LayoutStructure = lazy(() => import("./LayoutStructure"));
@@ -53,6 +54,7 @@ const Layout: FC = () => {
         <Route path={CONFIG.blog_details_path} element={<Details />} />
         <Route path={CONFIG.about_path} element={<About />} />
         <Route path={CONFIG.blog_path} element={<Blog />} />
+        <Route path={CONFIG.gallery_path} element={<Gallery />} />
         <Route path="*" Component={NotFound} />
       </Routes>
       <div className="overflow-hidden">
