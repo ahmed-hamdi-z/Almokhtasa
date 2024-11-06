@@ -15,10 +15,10 @@ const Form: React.FC = () => {
         if (form.current) {
             emailjs
                 .sendForm(
-                    "service_6jhs",
-                    "template_kmn1u",
+                    "service_fov8fd6",
+                    "template_bfmic6h",
                     form.current,
-                    "tyd3ZtB0OEPSBSo"
+                    "4a4DTJQWlAsWrODSA"
                 )
                 .then(
                     () => {
@@ -59,7 +59,7 @@ const Form: React.FC = () => {
                         <input
                             type="text"
                             id="lastName"
-                             name="last_name"
+                            name="last_name"
                             placeholder={t("Last name")}
                             className="mt-2 p-2 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500"
                         />
@@ -106,8 +106,6 @@ const Form: React.FC = () => {
                     />
                 </div>
 
-
-
                 {/* Submit Button */}
                 <div className="mt-6 flex justify-center">
                     <button type="submit"
@@ -117,38 +115,36 @@ const Form: React.FC = () => {
                 </div>
             </form>
             {message && (
-              <div className="fixed inset-0 flex items-center justify-center z-50">
-                <div className="relative bg-gradient-to-br from-[#764095] via-purple-500 to-pink-500 bg-black bg-opacity-50 text-white p-6 rounded-2xl shadow-2xl w-96 h-40 flex flex-col items-center justify-center transform transition-transform duration-300">
+                <div className="fixed inset-0 flex items-center justify-center z-50">
+                    <div className="relative bg-gradient-to-br from-[#764095] via-purple-500 to-pink-500 bg-black bg-opacity-50 text-white p-6 rounded-2xl shadow-2xl w-96 h-40 flex flex-col items-center justify-center transform transition-transform duration-300">
 
-                  {/* Close Button */}
-                  <button
-                    onClick={() => setMessage(null)}
-                    className="absolute top-4 right-4 text-white hover:text-gray-300 transition-colors duration-200"
-                    aria-label="Close"
-                  >
-                    <IoCloseSharp size={24} />
-                  </button>
+                        {/* Close Button */}
+                        <button
+                            onClick={() => setMessage(null)}
+                            className="absolute top-4 right-4 text-white hover:text-gray-300 transition-colors duration-200"
+                            aria-label="Close"
+                        >
+                            <IoCloseSharp size={24} />
+                        </button>
 
-                  {/* Message Text */}
-                  <p className="text-xl font-bold mb-4">{message}</p>
+                        {/* Message Text */}
+                        <p className="text-xl font-bold mb-4">{message}</p>
 
-                  {/* Close Button */}
-                  <button
-                    onClick={() => setMessage(null)}
-                    className="bg-white text-[#764095] px-6 py-2 rounded-full font-semibold hover:bg-[#764095] hover:text-white transition-colors duration-200 ease-in-out shadow-md"
-                  >
-                    {t("Close")}
-                  </button>
+                        {/* Close Button */}
+                        <button
+                            onClick={() => setMessage(null)}
+                            className="bg-white text-[#764095] px-6 py-2 rounded-full font-semibold hover:bg-[#764095] hover:text-white transition-colors duration-200 ease-in-out shadow-md"
+                        >
+                            {t("Close")}
+                        </button>
+                    </div>
                 </div>
-              </div>
 
             )}
             <div className='z-10 md:mb-[-11vh] mb-[-5vh]'>
                 <img src="/images/contact-img.png" alt="#" className='md:w-[600px] w-[330px]' />
             </div>
         </div>
-
-
     )
 };
 
