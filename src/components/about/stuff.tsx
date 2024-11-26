@@ -27,11 +27,10 @@ const Post = ({ id, imgUrl, title, description }: PostType) => {
     return (
         <div 
             key={id}
-            className="relative shrink-0 transition-transform hover:-translate-y-1 rounded-3xl">
-
+            className="relative shrink-0 transition-transform hover:-translate-y-1 rounded-3xl ">
             <img
                 src={imgUrl}
-                className="h-[350px] w-full object-cover rounded-t-3xl"
+                className="h-[350px] w-full object-cover rounded-t-3xl shadow-black shadow-md"
                 alt={`An image for a fake blog post titled ${title}`}
             />
             <div className="flex-col bg-[#FB8302] rounded-b-3xl p-3 max-h-30 items-center justify-center text-center"> <p className="text-lg text-white font-medium ">{t(title)}</p>
@@ -55,16 +54,10 @@ type PostType = {
 
 const posts: PostType[] = [
     {
-        id: 1,
+        id: 3,
         imgUrl: "/images/Ahmed.jpg",
         title: "Dr/Ahmed Marey",
         description: ["Bachelor of Veterinary"],
-    },
-    {
-        id: 3,
-        imgUrl: "/images/Eslam.jpg",
-        title: "Dr/Eslam Shreef",
-        description: ["General Surgeon"],
     },
     {
         id: 2,
@@ -72,37 +65,42 @@ const posts: PostType[] = [
         title: "Dr/Najat Seif Eldin",
         description: ["General Practitioner"],
     },
-
+  
     {
         id: 4,
+        imgUrl: "/images/Mark.jpg",
+        title: "Dr/Mark Ojuok",
+        description: ["General Practitioner"],
+    },
+    {
+        id: 6,
         imgUrl: "/images/AbdEljabar.jpg",
         title: "Mohamed Abd Eljabar",
         description: ["Veterinary Assistant"],
     },
-
     {
-        id: 7,
-        imgUrl: "/images/Mark.jpg",
-        title: "Dr/Mark Ojuok",
-        description: ["Veterinary"],
-    },
-    {
-        id: 6,
+        id: 5,
         imgUrl: "/images/AbdElQadir.jpg",
         title: "Abd ElQadir",
         description: ["Radiologist"],
     },
-
+    
+    {
+        id: 7,
+        imgUrl: "/images/Qutaiba.jpg",
+        title: "Qutaiba Al Khair",
+        description: ["Veterinary Assistant"],
+    },
     {
         id: 8,
         imgUrl: "/images/Perfecto.jpg",
         title: "Dr/Perfecto Altares",
-        description: ["Veterinary"],
+        description: ["General Practitioner"],
     },
     {
-        id: 5,
-        imgUrl: "/images/Qutaiba.jpg",
-        title: "Qutaiba Al Khair",
-        description: ["Veterinary Assistant"],
+        id: 1,
+        imgUrl: "/images/Eslam.jpg",
+        title: "Dr/Eslam Shreef",
+        description: ["General Surgeon"],
     },
 ];

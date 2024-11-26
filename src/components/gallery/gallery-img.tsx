@@ -85,7 +85,7 @@ const GalleryImg: FC = () => {
         <img
           key={i}
           src={image}
-          className="xl:w-80 md:w-80 w-auto  h-80 block cursor-pointer rounded-md transition-transform md:transition-opacity duration-300 ease-in-out transform hover:scale-95 hover:opacity-50"
+          className="xl:w-80 md:w-80 w-auto h-80 object-cover cursor-pointer rounded-md transition-transform md:transition-opacity duration-300 ease-in-out transform hover:scale-95 hover:opacity-50"
           alt={`Gallery item ${i}`}
           onClick={() => viewImage(image, i)}
           loading="lazy"
