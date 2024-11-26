@@ -16,11 +16,11 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ title, image }) => {
     return (
         <div className="  transform hover:scale-105 transition-transform duration-300  ">
             <div className="">
-                <img src={image} alt='' className="md:w-[38vw] w-[90%] h-auto object-cover mx-auto rounded-[55px]" />
+                <img src={image} alt='' className="md:w-[38vw] w-[90%] h-auto object-cover mx-auto rounded-[35px] md:rounded-[55px]" />
             </div>
             
-            <div className="absolute top-4 mx-auto w-full">
-                <h3 className="text-center text-white text-xl md:text-3xl md:font-semibold">{t(title)}</h3>
+            <div className="absolute top-2 mx-auto w-full">
+                <h3 className="text-center text-white text-[16px]  md:text-3xl font-semibold">{t(title)}</h3>
             </div>
         </div>
     );
