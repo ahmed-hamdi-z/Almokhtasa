@@ -9,7 +9,7 @@ const Hero = lazy(() => import("../../components/home/hero"));
 const ServicesSection = lazy(() => import("../../components/home/services-section"));
 const ChooseUs = lazy(() => import("../../components/home/choose"));
 const BlogSection = lazy(() => import("../../components/home/blog-section"));
-const ScrollingTestimonials = lazy(() => import("../../components/home/feedback"));
+const Feadback = lazy(() => import("../../components/home/feedback"));
 
 // Pages
 const Home: FC = () => {
@@ -34,7 +34,7 @@ const Home: FC = () => {
         <BlogSection />
       </div>
       <div className="w-full h-full">
-        <ScrollingTestimonials />
+        <Feadback />
       </div>
 
       <div>

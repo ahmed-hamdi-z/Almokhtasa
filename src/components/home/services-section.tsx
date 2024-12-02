@@ -1,4 +1,4 @@
-import React from "react";
+
 
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
@@ -50,14 +50,14 @@ const ServicesSection: React.FC = () => {
 
     return (
         <section className=" rounded-lg overflow-hidden w-full my-16 flex items-center justify-center ">
-            <div className=" text-center mb-3">
-                <h2 className="text-3xl text-[#505050] font-bold mb-10 ">{t("Services")} </h2>
+            <div className=" text-center mb-3 text-[#505050]">
+                <h2 className="text-3xl  font-bold mb-10 ">{t("Services")} </h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-5 my-16 ">
                     {services.map((service) => (
                         <ServiceCard key={service.title} title={service.title} image={service.image} />
                     ))}
                 </div>
-                <Link to="/about" className="bg-[#57C8BF] text-white px-7 py-1.5 rounded-full shadow-md hover:bg-teal-500 transition duration-300 font-semibold">
+                <Link to="/about" className="bg-[#57C8BF] text-white px-8 py-2.5 rounded-full shadow-md hover:bg-teal-500 transition duration-300 font-semibold">
                       {t("See More")}
                 </Link>
             </div>

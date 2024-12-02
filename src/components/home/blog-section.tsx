@@ -36,7 +36,7 @@ const Post = ({ id, imgUrl, title, description }: PostType) => {
                 className="h-[230px] w-full object-cover rounded-t-3xl"
                 alt={`An image for a fake blog post titled ${title}`}
             />
-            <div className="flex-col max-h-24 bg-[#FB8302] rounded-b-3xl p-3 rtl:text-right"> <p className="5 text-lg text-white font-medium ">{t(title)}</p>
+            <div className="flex-col max-h-24 bg-stuff-text rounded-b-3xl p-3 rtl:text-right"> <p className="5 text-lg text-white font-medium ">{t(title)}</p>
                 <p className="text-sm mt-2 text-white max-h-10 line-clamp-6 ">
                     {t(description)}
                 </p>

@@ -1,5 +1,4 @@
 // Dependencies
-import React from "react";
 import ScrollButton from "./scroll-btn";
 interface VideoPlayerProps {
     videoUrl: string;

@@ -1,5 +1,5 @@
 // Dependencies
-import React, { useRef, useState } from 'react';
+import { useRef, useState } from 'react';
 import { useTranslation } from "react-i18next";
 import emailjs from "@emailjs/browser";
 import { IoCloseSharp } from "react-icons/io5";
