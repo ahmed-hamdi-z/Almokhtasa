@@ -61,7 +61,7 @@ const posts: PostType[] = [
     },
     {
         id: 2,
-        imgUrl: "/images/Najat.jpg",
+        imgUrl: "/images/Najat.jpeg",
         title: "Dr/Najat Seif Eldin",
         description: ["General Practitioner"],
     },
@@ -80,7 +80,7 @@ const posts: PostType[] = [
     },
     {
         id: 5,
-        imgUrl: "/images/AbdElQadir.jpg",
+        imgUrl: "/images/AbdElQadir.jpeg",
         title: "Abd ElQadir",
         description: ["Radiologist"],
     },
@@ -93,7 +93,7 @@ const posts: PostType[] = [
     },
     {
         id: 8,
-        imgUrl: "/images/Perfecto.jpg",
+        imgUrl: "/images/Perfecto.jpeg",
         title: "Dr/Perfecto Altares",
         description: ["General Practitioner"],
     },
