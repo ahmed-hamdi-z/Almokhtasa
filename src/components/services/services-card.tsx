@@ -4,14 +4,14 @@ const ServicesCards = () => {
    
     return (
         <section className="bg-white w-full flex flex-col items-center justify-center my-24 p-2" >
-            <div className="">
+      
                 <div className=" w-full">
                     <div className="grid md:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-8" >
                         {posts.map((post) => {
                             return <Post key={post.id} {...post} />;
                         })}
                     </div>
-                </div>
+            
             </div>
         </section>
     );
@@ -23,7 +23,7 @@ const Post = ({ id, imgUrl, title, description }: PostType) => {
         <div key={id}
             className="flex flex-col items-center  shrink-0 transition-transform hover:-translate-y-1 rounded-3xl ">
             <div className="flex flex-col w-full items-center ">
-                <p className="absolute text-lg text-footer-text font-medium px-2 md:mt-1 mt-3 text-center ">{t(title)}</p>
+                <p className="absolute text-lg text-footer-text font-medium px-2 md:mt-1 mt-1 text-center text-white ">{t(title)}</p>
 
                 <img
                     src={imgUrl}
@@ -34,7 +34,7 @@ const Post = ({ id, imgUrl, title, description }: PostType) => {
 
             <div className="flex-col md:w-[250px] w-full rounded-b-3xl">
             </div>
-            <p className="text-sm mt-2 text-black max-h-30 line-clamp-7 mx-5 text-center px-2 pb-3">
+            <p className="text-sm mt-2 text-[#777777] max-h-30 line-clamp-7 mx-3 text-center px-2 pb-3">
                 {t(description)}
             </p>
         </div>

@@ -7,17 +7,17 @@ const StuffSection = () => {
     return (
         <section className="bg-white w-full flex flex-col items-center justify-center my-20" >
             <div className="bg-stuff-text w-full flex justify-center h-[40vh]" >
-                <h1 className="text-4xl text-[##8B8B8B] font-bold mt-4 ">{t("Our Stuff")} </h1>
+                <h1 className="text-5xl text-white font-semibold mt-4 ">{t("Our Stuff")} </h1>
             </div>
-            <div className=" overflow-hidden flex items-center justify-center mt-[-18vh]">
-                <div className="mx-auto max-w-full">
-                    <div className=" grid gap-3 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:mx-5 mx-2">
+            <div className=" overflow-hidden flex items-center justify-center mt-[-18vh] ">
+           
+                    <div className=" grid gap-3 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:mx-5 mx-2 ">
                         {posts.map((post) => {
                             return <Post key={post.id} {...post} />;
                         })}
                     </div>
-                </div>
-            </div>
+            
+            </div>  
         </section>
     );
 };
@@ -30,7 +30,7 @@ const Post = ({ id, imgUrl, title, description }: PostType) => {
             className="relative shrink-0 transition-transform hover:-translate-y-1 rounded-3xl ">
             <img
                 src={imgUrl}
-                className="h-[350px] w-full object-cover rounded-t-3xl shadow-black shadow-md"
+                className="h-[400px] md:h-[400px] lg:h-[500px] w-full object-cover  rounded-t-3xl shadow-black shadow-md"
                 alt={`An image for a fake blog post titled ${title}`}
             />
             <div className="flex-col bg-[#FB8302] rounded-b-3xl p-3 max-h-30 items-center justify-center text-center"> <p className="text-lg text-white font-medium ">{t(title)}</p>
