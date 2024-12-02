@@ -110,9 +110,8 @@ const MobileMenu = () => {
         }
     };
     const [open, setOpen] = useState(false);
-
     return (
-        <div className="md:block lg:hidden flex  z-50 gap-4 w-full">
+        <div className="md:block lg:hidden flex z-50 gap-4 w-full">
             <div className="flex flex-row-reverse items-center justify-start gap-4 mr-auto ">
                 <button onClick={() => setOpen(true)} className="block text-3xl">
                     <FiMenu />
@@ -123,7 +122,7 @@ const MobileMenu = () => {
             </div>
 
             <AnimatePresence>
-                {open && (
+                {open ? (
                     <motion.nav
                         initial={{ x: "100vw" }}
                         animate={{ x: 0 }}
@@ -175,7 +174,7 @@ const MobileMenu = () => {
                             </div>
                         </div>
                     </motion.nav>
-                )}
+                ) : (<></>) }
             </AnimatePresence>
         </div>
     );
